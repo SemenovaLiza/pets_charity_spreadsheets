@@ -33,6 +33,20 @@ SECRET=Secret
 FIRST_SUPERUSER_EMAIL=login@email.com
 FIRST_SUPERUSER_PASSWORD=password
 ```
+In order to use google api add additional parameters in .env file
+```
+TYPE=
+PROJECT_ID=
+PRIVATE_KEY_ID=
+PRIVATE_KEY=
+CLIENT_EMAIL=
+CLIENT_ID=
+AUTH_URI=
+TOKEN_URI=
+AUTH_PROVIDER_X509_CERT_URL=
+CLIENT_X509_CERT_URL=
+EMAIL=
+```
 Make migrations file
 ```
 alembic revision --autogenerate -m "First migration" 
