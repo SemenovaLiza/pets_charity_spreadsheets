@@ -8,7 +8,7 @@ from app.core.user import current_superuser, current_user
 from app.crud.charity_project import charity_project_crud
 from app.crud.donation import donation_crud
 from app.models import User
-from app.schemas.donation import DonationBase, DonationCreate, DonationDB
+from app.schemas.donation import DonationCreate, DonationDB, DonationBase
 from app.services.investment import investing_process
 
 router = APIRouter()
