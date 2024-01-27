@@ -32,7 +32,7 @@ class CRUDCharityProject(CRUDBase):
             )
         )
         return db_project.scalars().first()
-    
+
     async def get_by_completion_rate(self) -> List[CharityProject]:
         """Возвращает отсортированный по времени сбора список проектов."""
         completion_rate = extract("epoch", self.model.close_date) - extract(
