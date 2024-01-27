@@ -1,6 +1,6 @@
-from typing import Optional, List, Dict
+from typing import List, Optional
 
-from sqlalchemy import select, extract
+from sqlalchemy import extract, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.crud.base import CRUDBase
@@ -32,7 +32,7 @@ class CRUDCharityProject(CRUDBase):
             )
         )
         return db_project.scalars().first()
-    
+
     async def get_by_completion_rate(self) -> List[CharityProject]:
         """
         Сортировка списка со всеми закрытыми благотворительными проектами
