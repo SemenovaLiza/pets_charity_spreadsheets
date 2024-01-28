@@ -1,8 +1,6 @@
-from datetime import datetime
-
 from aiogoogle import Aiogoogle
 
-from app.core.constants import FORMAT, SPREADSHEET_BODY, PERMISSIONS_BODY, TABLE_VALUES
+from app.core.constants import PERMISSIONS_BODY, SPREADSHEET_BODY, TABLE_VALUES
 
 
 async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
@@ -39,7 +37,6 @@ async def spreadsheets_update_value(
     """
     Обновляет данные в гугл-таблице.
     """
-    now_date_time = datetime.now().strftime(FORMAT)
     service = await wrapper_services.discover('sheets', 'v4')
     for project in projects:
         new_row = [
