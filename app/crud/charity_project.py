@@ -1,6 +1,6 @@
-from typing import List, Optional
+from typing import Optional, List
 
-from sqlalchemy import select
+from sqlalchemy import extract, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.crud.base import CRUDBase
@@ -33,16 +33,18 @@ class CRUDCharityProject(CRUDBase):
         )
         return db_project.scalars().first()
 
-    async def get_projects_by_completion_rate(
-            self,
-            session: AsyncSession
-    ) -> List[CharityProject]:
-        db_projects = await session.execute(
-            select(CharityProject).where(
-                CharityProject.fully_invested
-            ).order_by(CharityProject.close_date - CharityProject.create_date)
+    async def get_by_completion_rate(self) -> List[CharityProject]:
+        """Возвращает отсортированный по времени сбора список проектов."""
+        completion_rate = extract("epoch", self.model.close_date) - extract(
+            "epoch", self.model.create_date
         )
-        return db_projects.scalars().all()
+        async with self.session as session:
+            projects = await session.execute(
+                select(self.model)
+                .filter(self.model.close_date.isnot(None))
+                .order_by(completion_rate)
+            )
+            return projects.scalars().all()
 
 
 charity_project_crud = CRUDCharityProject(CharityProject)
