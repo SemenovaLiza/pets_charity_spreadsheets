@@ -1,4 +1,6 @@
-# QRKot
+# API for the QRKot Cat Charitable Foundation && QRkot_spreadseets
+Extended version of QRKot Cat Charitable Foundation app. Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
+
 A training project of the application API for the QRKot Cat Charitable Foundation. Its purpose is to collect and distribute donations among various charity projects.
 ## Technologies
 - [Python](https://www.python.org/)
@@ -7,16 +9,17 @@ A training project of the application API for the QRKot Cat Charitable Foundatio
 - [Alembic](https://alembic.sqlalchemy.org/)
 - [FastAPI Users](https://fastapi-users.github.io/fastapi-users/)
 - [Uvicorn](https://www.uvicorn.org/)
+- [Aiogoogle](https://aiogoogle.readthedocs.io/en/latest/index.html)
 ## Instructions
 Clone the repository:
 ```
-git clone git@github.com:SemenovaLiza/cat_charity_fund.git
+git clone git@github.com:SemenovaLiza/QRkot_spreadsheets.git
 ```
 Create and activate virtual environment:
 ```
-python -m venv venv
+python3 -m venv venv
 ```
-Install requirements.txt:
+Install requirements.txt, required python version >= 3.9::
 ```
 pip install -r requirements.txt
 ``` 
@@ -24,35 +27,30 @@ Create .env file:
 ```
 touch .env
 ```
-Fill the .env file:
+Fill the .env file with your service account details to .env file in order to use Google API:
 ```
-APP_TITLE=App_title
-DESCRIPTION=Description
-DATABASE_URL=sqlite+aiosqlite:///./fastapi.db
-SECRET=Secret
-FIRST_SUPERUSER_EMAIL=login@email.com
-FIRST_SUPERUSER_PASSWORD=password
+APP_TITLE=QRkot
+APP_DESCRIPTION=Сервис поддержки котов
+DATABASE_URL='sqlite+aiosqlite:///./fastapi.db'
+SECRET=<secret>
+FIRST_SUPERUSER_EMAIL=<email superuser>
+FIRST_SUPERUSER_PASSWORD=<password superuser>
+TYPE=service_account
+PROJECT_ID=atomic-climate-<id>
+PRIVATE_KEY_ID=<id private key>
+PRIVATE_KEY="-----BEGIN PRIVATE KEY-----<private key>-----END PRIVATE KEY-----\n"
+CLIENT_EMAIL=<email service account>
+CLIENT_ID=<id service account>
+AUTH_URI=https://accounts.google.com/o/oauth2/auth
+TOKEN_URI=https://oauth2.googleapis.com/token
+AUTH_PROVIDER_X509_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+CLIENT_X509_CERT_URL=<link>
+EMAIL=<email user>
 ```
-In order to use google api add additional parameters in .env file
+Apply migrations to create an database:
 ```
-TYPE=
-PROJECT_ID=
-PRIVATE_KEY_ID=
-PRIVATE_KEY=
-CLIENT_EMAIL=
-CLIENT_ID=
-AUTH_URI=
-TOKEN_URI=
-AUTH_PROVIDER_X509_CERT_URL=
-CLIENT_X509_CERT_URL=
-EMAIL=
-```
-Make migrations file
-```
-alembic revision --autogenerate -m "First migration" 
-```
-Run migrations
-```
+alembic init --template async alembic
+alembic revision --autogenerate -m "First migration"
 alembic upgrade head
 ```
 Run server
@@ -62,6 +60,4 @@ uvicorn app.main:app --reload
 
 ## Documentation
 
-Download project's documentation openapi.json:
-
-To view the documentation, upload the file to the website https://redocly.github.io/redoc/. There is a **Upload a file** button at the top of the page, click it and upload the downloaded file. The project specification will be displayed in Doc format.
+Documentation is available at http://127.0.0.1:8000/docs - automatically generated Swagger documentation.
