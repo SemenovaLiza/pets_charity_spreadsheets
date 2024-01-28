@@ -2,10 +2,6 @@ from datetime import datetime
 from typing import List
 
 from app.models import CharityProject
-
-from datetime import datetime
-from typing import List
-
 from app.models.charity_project import CharityProject
 
 
