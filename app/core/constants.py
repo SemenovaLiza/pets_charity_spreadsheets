@@ -1,11 +1,9 @@
-from datetime import datetime
-
 from app.core.config import settings
 
 FORMAT = "%Y-%m-%d %H:%M:%S"
 SPREADSHEET_BODY = {
     'properties': {
-        'title': f'Отчет от {datetime.now().strftime(FORMAT)}',
+        'title': None,
         'locale': 'ru_RU'
     },
     'sheets': [{
@@ -28,7 +26,7 @@ PERMISSIONS_BODY = {
 }
 
 TABLE_VALUES = [
-    ['Отчет от', datetime.now().strftime(FORMAT)],
+    ['Отчет от'],
     ['Топ проектов по скорости закрытия'],
     ['Название проекта', 'Время сбора', 'Описание']
 ]
