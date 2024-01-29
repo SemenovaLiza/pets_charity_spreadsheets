@@ -2,7 +2,8 @@ from datetime import datetime
 
 from aiogoogle import Aiogoogle
 
-from app.core.constants import FORMAT, PERMISSIONS_BODY, SPREADSHEET_BODY, TABLE_VALUES
+from app.core.constants import (FORMAT, PERMISSIONS_BODY, SPREADSHEET_BODY,
+                                TABLE_VALUES)
 
 
 async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
