@@ -1,5 +1,5 @@
-# API for the QRKot Cat Charitable Foundation && QRkot_spreadseets
-Extended version of charity fund app. Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
+# API for the pets charity fund
+Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
 ## Technologies
 - [Python](https://www.python.org/)
