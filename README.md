@@ -1,4 +1,4 @@
-# API for the pets charity fund
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=657&size=24&pause=1000&color=A93226&random=false&width=435&lines=🐾🐾🐾🐾API+for+pets+charity+fund+🐾🐾🐾🐾)](https://git.io/typing-svg)
 Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
 ## Technologies
