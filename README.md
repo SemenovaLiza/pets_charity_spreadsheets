@@ -1,7 +1,6 @@
 # API for the QRKot Cat Charitable Foundation && QRkot_spreadseets
-Extended version of QRKot Cat Charitable Foundation app. Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
+Extended version of charity fund app. Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
-A training project of the application API for the QRKot Cat Charitable Foundation. Its purpose is to collect and distribute donations among various charity projects.
 ## Technologies
 - [Python](https://www.python.org/)
 - [FastAPI](https://fastapi.tiangolo.com/)
