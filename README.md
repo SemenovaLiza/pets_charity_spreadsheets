@@ -1,4 +1,15 @@
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=657&size=24&pause=1000&color=A93226&random=false&width=435&lines=🐾🐾Pets+charity+fund+API🐾🐾)](https://git.io/typing-svg)
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Pytest](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square&logo=pytest)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.95.0-brightgreen)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0.0-red)
+![Alembic](https://img.shields.io/badge/Alembic-1.10.0-lightgrey)
+![FastAPI Users](https://img.shields.io/badge/FastAPI%20Users-10.3.1-blue)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-0.22.0-orange)
+![Aiogoogle](https://img.shields.io/badge/Aiogoogle-3.0.0-yellowgreen)
+![Status](https://img.shields.io/badge/status-finished-green?style=flat-square)
+
 Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
 ## Technologies
@@ -59,4 +70,7 @@ uvicorn app.main:app --reload
 
 ## Documentation
 
-Documentation is available at http://127.0.0.1:8000/docs - automatically generated Swagger documentation.
+Documentation is available when project is running at http://127.0.0.1:8000/docs - automatically generated Swagger documentation.
+
+# Author
+Elizaveta Semenova
