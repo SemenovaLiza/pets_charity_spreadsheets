@@ -13,7 +13,7 @@
 Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
 ## Technologies
-- [Python - 3,10](https://www.python.org/) 🐶
+- [Python - 3.10](https://www.python.org/) 🐶
 - [FastAPI - 0.78.0](https://fastapi.tiangolo.com/) 🐶
 - [SQLAlchemy - 1.4.36](http://www.sqlalchemy.org/) 🐶
 - [Alembic - 1.7.7](https://alembic.sqlalchemy.org/) 🐶
