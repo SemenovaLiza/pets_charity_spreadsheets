@@ -2,12 +2,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Pytest](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square&logo=pytest)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.95.0-brightgreen)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0.0-red)
-![Alembic](https://img.shields.io/badge/Alembic-1.10.0-lightgrey)
-![FastAPI Users](https://img.shields.io/badge/FastAPI%20Users-10.3.1-blue)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-0.22.0-orange)
-![Aiogoogle](https://img.shields.io/badge/Aiogoogle-3.0.0-yellowgreen)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.78.0-brightgreen)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-1.4.36-red)
+![Alembic](https://img.shields.io/badge/Alembic-1.7.7-lightgrey)
+![FastAPI Users](https://img.shields.io/badge/FastAPI%20Users-10.0.4-blue)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-0.17.6-orange)
+![Aiogoogle](https://img.shields.io/badge/Aiogoogle-4.2.0-yellowgreen)
 ![Status](https://img.shields.io/badge/status-finished-green?style=flat-square)
 
 Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
