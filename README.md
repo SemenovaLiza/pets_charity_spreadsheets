@@ -13,13 +13,13 @@
 Extended version of [charity fund app](https://github.com/SemenovaLiza/pets_charity_fund). Added the ability to generate reports in Google Sheets to know which projects are closing the fastest.
 
 ## Technologies
-- [Python](https://www.python.org/) 🐶
-- [FastAPI](https://fastapi.tiangolo.com/) 🐶
-- [SQLAlchemy](http://www.sqlalchemy.org/) 🐶
-- [Alembic](https://alembic.sqlalchemy.org/) 🐶
-- [FastAPI Users](https://fastapi-users.github.io/fastapi-users/)🐶
-- [Uvicorn](https://www.uvicorn.org/) 🐶
-- [Aiogoogle](https://aiogoogle.readthedocs.io/en/latest/index.html) 🐶
+- [Python - 3,10](https://www.python.org/) 🐶
+- [FastAPI - 0.78.0](https://fastapi.tiangolo.com/) 🐶
+- [SQLAlchemy - 1.4.36](http://www.sqlalchemy.org/) 🐶
+- [Alembic - 1.7.7](https://alembic.sqlalchemy.org/) 🐶
+- [FastAPI Users - 10.0.4](https://fastapi-users.github.io/fastapi-users/)🐶
+- [Uvicorn - 0.17.6](https://www.uvicorn.org/) 🐶
+- [Aiogoogle - 4.2.0](https://aiogoogle.readthedocs.io/en/latest/index.html) 🐶
 ## Instructions
 Clone the repository:
 ```
